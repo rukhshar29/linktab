@@ -36,7 +36,7 @@ class TextTabScreen extends StatelessWidget {
                 String textToShare = "\"I'm reading a book about anti-gravity. It's impossible to put down.\" - Steven Wright";
                 String link = 'https://linktab-3f36d.web.app';
                 await Share.share('Check out this text: $textToShare $link');
-                onShare(); // Call this to switch back to the Text tab
+                onShare(); 
               },
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,

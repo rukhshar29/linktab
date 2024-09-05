@@ -78,7 +78,7 @@ class VideoTabScreenState extends State<VideoTabScreen> {
               await file.writeAsBytes(bytes.buffer.asUint8List());
               await Share.shareXFiles([XFile(file.path)], text: 'Check out this video: $link');
               if (mounted) {
-                widget.onShare(); // Switch to the Video tab after sharing if still mounted
+                widget.onShare(); 
               }
             },
             child: const Row(

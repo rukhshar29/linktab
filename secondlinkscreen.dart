@@ -45,7 +45,7 @@ class ImageTabScreen extends StatelessWidget {
                 final bytes = await rootBundle.load('assets/moonsign.jpg');
                 await file.writeAsBytes(bytes.buffer.asUint8List());
                 await Share.shareXFiles([XFile(file.path)], text: 'Check out this image: $link');
-                onShare(); // Call this to switch back to the Image tab
+                onShare();
               },
               child: const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
